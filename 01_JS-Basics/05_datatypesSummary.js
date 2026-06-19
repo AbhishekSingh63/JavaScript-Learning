@@ -23,3 +23,23 @@ const myFunction=function(){
 console.log(typeof myObj);
 console.log(typeof myFunction);
 console.log(typeof heroes);
+
+
+// *******Memory*******
+
+// Stack Memory(for primitive datatypes), Heap Memory(for non-primitive datatypes)
+
+let myName="Abhi"
+let anotherName=myName
+anotherName="Rohan"
+console.log(myName);
+console.log(anotherName);
+
+let userOne={
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+let userTwo=userOne
+userTwo.email="abhi@google.com"
+console.log(userOne.email);
+console.log(userTwo.email);
